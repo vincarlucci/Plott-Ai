@@ -47,6 +47,13 @@ h1, h2, h3, h4 { font-weight: 500; letter-spacing: -0.02em; color: var(--text-ma
     background-clip: text;
 }
 
+/* Hides newline when mobile view */
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
 /* --- Navigation --- */
 .navbar {
     position: fixed;
@@ -944,7 +951,7 @@ h1, h2, h3, h4 { font-weight: 500; letter-spacing: -0.02em; color: var(--text-ma
     color: var(--text-main);
     text-decoration: none;
     font-family: var(--font-mono);
-    font-size: 0.95rem;
+    font-size: 0.7rem;
     font-weight: 500;
     transition: all 0.2s ease;
 }
