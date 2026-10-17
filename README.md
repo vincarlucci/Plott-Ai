@@ -1,10 +1,10 @@
 # plottai.com
 
-Landing page for [Plott Ai](https://github.com/plottai/plottai) — The Last Mile AI for your Code & Beyond.
+Landing page for [Plott Ai Labs](https://github.com/plottai/plottai).
 
 **Live**: [plottai.com](https://plottai.com)
 
-Copyright (c) 2026 Plott Ai. All rights reserved. This source code is provided for informational purposes only. No permission is granted to copy, modify, or redistribute this software in any form.
+Copyright (c) 2026 Plott Ai Labs. All rights reserved. This source code is provided for informational purposes only. No permission is granted to copy, modify, or redistribute this software in any form.
 
 ## Pages
 
