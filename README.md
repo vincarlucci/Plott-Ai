@@ -1,6 +1,6 @@
 # plottai.com
 
-Landing page for [Plott Ai Labs](https://github.com/plottai/plottai).
+Landing page for [Plott Ai Labs](https://github.com/vincarlucci/plott-ai).
 
 **Live**: [plottai.com](https://plottai.com)
 
