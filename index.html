@@ -3,268 +3,377 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plott Ai | Industrial Machine Intelligence Research</title>
-    <meta name="description" content="Redefining industrial automation through high-performance AI architectures.">
+    <title>Plott AI — The Factory That Designs Itself</title>
+    <meta name="description" content="Plott AI builds generative intelligence that designs shop floors, synthesizes complex machine equipment, and runs them — from prompt to production.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Ambient background layers -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
 
     <!-- Navigation -->
     <nav class="nav">
         <div class="container nav-inner">
             <a href="#" class="logo">
                 <span class="logo-mark"></span>
-                PLOTT AI
+                PLOTT&nbsp;AI
+                <span class="logo-tag">/ GENERATIVE INDUSTRY</span>
             </a>
             <div class="nav-links">
-                <a href="#research">Research</a>
-                <a href="#architecture">Architecture</a>
-                <a href="#domains">Domains</a>
+                <a href="#pipeline">Pipeline</a>
+                <a href="#shopfloor">Shopfloor</a>
+                <a href="#machines">Machinery</a>
+                <a href="#shift">The Shift</a>
                 <button class="btn-text modal-trigger">Access Program</button>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <header class="hero">
-        <div class="container">
-            <div class="hero-grid">
-                <div class="hero-meta">
-                    <div class="meta-item">
-                        <span class="label">Status</span>
-                        <span class="value active">Research Active</span>
-                    </div>
-                    <div class="meta-item">
-                        <span class="label">Focus</span>
-                        <span class="value">Industrial AI Stack</span>
-                    </div>
-                    <div class="meta-item">
-                        <span class="label">Ver</span>
-                        <span class="value">2.0 (Next Gen)</span>
-                    </div>
+        <canvas id="genCanvas" aria-hidden="true"></canvas>
+        <div class="container hero-inner">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span> GENERATION SYSTEM v3 — LIVE
+            </div>
+
+            <h1 class="display-text">
+                The factory will<br>
+                <span class="gradient-text">design itself.</span>
+            </h1>
+
+            <p class="lead">
+                Plott AI is a research lab building generative intelligence for heavy industry.
+                We generate entire shop floors — layouts, conveyors, robotic cells, complex machine
+                equipment — synthesized, simulated and commissioned by AI. You describe what to build.
+                The factory designs the rest of itself.
+            </p>
+
+            <div class="hero-actions">
+                <button class="btn-primary modal-trigger">Request Early Access</button>
+                <a href="#pipeline" class="btn-link">See the generation pipeline ↓</a>
+            </div>
+
+            <div class="hero-meta-row">
+                <div class="meta-item">
+                    <span class="label">Status</span>
+                    <span class="value active">Generating</span>
                 </div>
-                
-                <div class="hero-content">
-                    <h1 class="display-text">
-                        Redesigning the<br>
-                        <span class="outline-text">Machine Stack.</span>
-                    </h1>
-                    <p class="lead">
-                        We are a research lab building the next-generation architecture for industrial automation. 
-                        Combining deterministic low-latency control with adaptive AI intelligence.
-                    </p>
-                    <div class="hero-actions">
-                        <button class="btn-primary modal-trigger">Join Early Access</button>
-                        <a href="#architecture" class="btn-link">View System Schematic ↓</a>
-                    </div>
+                <div class="meta-item">
+                    <span class="label">Output</span>
+                    <span class="value">Shop Floors / Machinery</span>
+                </div>
+                <div class="meta-item">
+                    <span class="label">PLC Code Used</span>
+                    <span class="value">0 Lines</span>
                 </div>
             </div>
+        </div>
+
+        <!-- Prompt terminal -->
+        <div class="terminal">
+            <div class="terminal-head">
+                <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+                <span class="term-title">plott://generate — shopfloor.prd</span>
+            </div>
+            <div class="terminal-body" id="terminal"></div>
         </div>
     </header>
 
-    <!-- Architecture / Animation Section -->
-    <section id="architecture" class="section section-dark">
+    <!-- Pipeline -->
+    <section id="pipeline" class="section">
         <div class="container">
-            <div class="section-intro">
-                <span class="eyebrow">01 // System Architecture</span>
-                <h2>The New Standard Topology</h2>
-                <p>A departure from 30-year-old concepts. Centralized high-performance compute flanked by dedicated tensor units, orchestrating the field via deterministic fabric.</p>
-                <p>Every software and hardware component is being developed for the factory shop floor of tomorrow.</p>
+            <div class="section-intro reveal">
+                <span class="eyebrow">01 // GENERATION PIPELINE</span>
+                <h2>From a sentence<br>to a running factory</h2>
+                <p>There is no CAD phase, no PLC engineering phase, no commissioning phase.
+                A single generative system carries the product end to end — continuously re-designing itself when reality changes.</p>
             </div>
 
-            <div class="blueprint-container">
-                <div class="blueprint-label">FIG 1.0 — CONTROL CABINET SCHEMATIC</div>
-                
-                <!-- REDESIGNED SVG: Cleaner, Wireframe, Technical -->
-                <svg class="blueprint-svg" viewBox="0 0 900 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Grid Background -->
-                    <defs>
-                        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-                        </pattern>
-                        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-                            <path d="M0,0 L0,6 L9,3 z" fill="#0ea5e9" />
-                        </marker>
-                    </defs>
-                    <rect width="100%" height="100%" fill="url(#grid)" />
+            <div class="pipeline reveal">
+                <div class="pipe-line" aria-hidden="true"><span class="pipe-pulse"></span></div>
 
-                    <!-- Cabinet Outline (Abstract) -->
-                    <rect x="100" y="50" width="700" height="500" rx="4" stroke="rgba(255,255,255,0.1)" stroke-dasharray="4 4" />
-                    
-                    <!-- TOP ROW: COMPUTE CLUSTER -->
-                    <!-- HPC Core (Left-Center Bias) -->
-                    <g class="node-group" transform="translate(150, 100)">
-                        <rect width="240" height="120" fill="rgba(14, 165, 233, 0.05)" stroke="#0ea5e9" stroke-width="1.5" />
-                        <text x="20" y="30" fill="#0ea5e9" font-family="'Space Mono'" font-size="12">HPC_CORE // MAIN</text>
-                        <rect x="20" y="50" width="200" height="40" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.1)" />
-                        <!-- Animated Waveform inside -->
-                        <path class="wave-path" d="M20 70 Q 40 50, 60 70 T 100 70 T 140 70 T 180 70 T 220 70" stroke="#0ea5e9" stroke-width="1.5" fill="none" />
-                        <circle cx="220" cy="20" r="3" fill="#0ea5e9" class="blink" />
-                    </g>
-
-                    <!-- AI Accel 01 -->
-                    <g class="node-group" transform="translate(430, 110)">
-                        <rect width="140" height="100" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.3)" />
-                        <text x="15" y="25" fill="white" font-family="'Space Mono'" font-size="10">GPU_TENSOR_01</text>
-                        <line x1="15" y1="40" x2="125" y2="40" stroke="rgba(255,255,255,0.1)" />
-                        <rect x="15" y="55" width="20" height="20" fill="rgba(255,255,255,0.1)" />
-                        <rect x="45" y="55" width="20" height="20" fill="rgba(255,255,255,0.1)" />
-                        <rect x="75" y="55" width="20" height="20" fill="rgba(255,255,255,0.1)" />
-                    </g>
-
-                    <!-- AI Accel 02 -->
-                    <g class="node-group" transform="translate(610, 110)">
-                        <rect width="140" height="100" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.3)" />
-                        <text x="15" y="25" fill="white" font-family="'Space Mono'" font-size="10">GPU_TENSOR_02</text>
-                        <line x1="15" y1="40" x2="125" y2="40" stroke="rgba(255,255,255,0.1)" />
-                        <rect x="15" y="55" width="20" height="20" fill="rgba(255,255,255,0.1)" />
-                        <rect x="45" y="55" width="20" height="20" fill="rgba(255,255,255,0.1)" />
-                        <rect x="75" y="55" width="20" height="20" fill="rgba(255,255,255,0.1)" />
-                    </g>
-
-                    <!-- Interconnects (Top) -->
-                    <path d="M390 160 L430 160" stroke="white" stroke-width="1" />
-                    <path d="M570 160 L610 160" stroke="white" stroke-width="1" />
-                    
-                    <!-- Data Flow Particles (Top) -->
-                    <circle r="2" fill="white"><animateMotion dur="2s" repeatCount="indefinite" path="M390 160 L430 160" /></circle>
-                    <circle r="2" fill="white"><animateMotion dur="2s" begin="1s" repeatCount="indefinite" path="M570 160 L610 160" /></circle>
-
-
-                    <!-- MID ROW: SWITCH FABRIC -->
-                    <line x1="150" y1="300" x2="750" y2="300" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
-                    <text x="150" y="290" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="10">HP_BUS // Network</text>
-
-                    <!-- Vertical Drop from HPC -->
-                    <path d="M270 220 L270 300" stroke="#0ea5e9" stroke-width="1.5" />
-                    <circle r="3" fill="#0ea5e9"><animateMotion dur="1.5s" repeatCount="indefinite" path="M270 220 L270 300" /></circle>
-
-                    <!-- Switch Nodes -->
-                    <g transform="translate(180, 320)">
-                        <rect width="80" height="60" stroke="rgba(255,255,255,0.3)" fill="none" />
-                        <text x="10" y="20" fill="white" font-family="'Space Mono'" font-size="9">SW_01</text>
-                        <circle cx="65" cy="15" r="2" fill="#10b981" class="blink-fast" />
-                    </g>
-                    <g transform="translate(340, 320)">
-                        <rect width="80" height="60" stroke="rgba(255,255,255,0.3)" fill="none" />
-                        <text x="10" y="20" fill="white" font-family="'Space Mono'" font-size="9">SW_02</text>
-                        <circle cx="65" cy="15" r="2" fill="#10b981" class="blink-fast" style="animation-delay: 0.2s"/>
-                    </g>
-                    <g transform="translate(500, 320)">
-                        <rect width="80" height="60" stroke="rgba(255,255,255,0.3)" fill="none" />
-                        <text x="10" y="20" fill="white" font-family="'Space Mono'" font-size="9">SW_03</text>
-                        <circle cx="65" cy="15" r="2" fill="#10b981" class="blink-fast" style="animation-delay: 0.4s"/>
-                    </g>
-                    <g transform="translate(660, 320)">
-                        <rect width="80" height="60" stroke="rgba(255,255,255,0.3)" fill="none" />
-                        <text x="10" y="20" fill="white" font-family="'Space Mono'" font-size="9">SW_04</text>
-                        <circle cx="65" cy="15" r="2" fill="#10b981" class="blink-fast" style="animation-delay: 0.6s"/>
-                    </g>
-
-                    <!-- Connections Bus -> Switches -->
-                    <path d="M220 300 L220 320 M380 300 L380 320 M540 300 L540 320 M700 300 L700 320" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
-
-
-                    <!-- BOTTOM ROW: FIELD DEVICES -->
-                    <g transform="translate(180, 460)">
-                        <rect width="80" height="60" stroke="rgba(255,255,255,0.1)" fill="rgba(255,255,255,0.02)" />
-                        <text x="40" y="35" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="'Space Mono'" font-size="10">Device_A</text>
-                    </g>
-                    <g transform="translate(340, 460)">
-                        <rect width="80" height="60" stroke="rgba(255,255,255,0.1)" fill="rgba(255,255,255,0.02)" />
-                        <text x="40" y="35" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="'Space Mono'" font-size="10">Device_B</text>
-                    </g>
-                    <g transform="translate(500, 460)">
-                        <rect width="80" height="60" stroke="rgba(255,255,255,0.1)" fill="rgba(255,255,255,0.02)" />
-                        <text x="40" y="35" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="'Space Mono'" font-size="10">Sensor_C</text>
-                    </g>
-                    <g transform="translate(660, 460)">
-                        <rect width="80" height="60" stroke="rgba(255,255,255,0.1)" fill="rgba(255,255,255,0.02)" />
-                        <text x="40" y="35" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="'Space Mono'" font-size="10">Actuator_D</text>
-                    </g>
-
-                    <!-- Connections Switches -> Machines -->
-                    <path d="M220 380 L220 460 M380 380 L380 460 M540 380 L540 460 M700 380 L700 460" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2 2" />
-                    
-                    <!-- Return Flow (Green) -->
-                    <circle r="2" fill="#10b981"><animateMotion dur="3s" repeatCount="indefinite" path="M380 460 L380 380 L380 300 L270 300 L270 220" /></circle>
-
-                </svg>
+                <div class="pipe-stage">
+                    <div class="pipe-num">01</div>
+                    <h3>Describe</h3>
+                    <p>The product, the takt time, the constraints. In plain language. The AI holds everything else.</p>
+                </div>
+                <div class="pipe-stage">
+                    <div class="pipe-num">02</div>
+                    <h3>Generate</h3>
+                    <p>Shop floor topology, machine geometry, kinematics and control logic — synthesized as one coherent system, not assembled from catalogs.</p>
+                </div>
+                <div class="pipe-stage">
+                    <div class="pipe-num">03</div>
+                    <h3>Simulate</h3>
+                    <p>The entire plant runs digitally for thousands of operating years. Failures are found before they can exist.</p>
+                </div>
+                <div class="pipe-stage">
+                    <div class="pipe-num">04</div>
+                    <h3>Deploy</h3>
+                    <p>The same intelligence that designed the floor now operates it — reasoning inside the deterministic control loop, re-generating on every product variation.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Strip -->
-    <section class="ticker-section">
+    <!-- Generated Shopfloor -->
+    <section id="shopfloor" class="section section-dark">
         <div class="container">
-            <div class="ticker-wrap">
-                <div class="ticker-label">TEAM EXPERIENCE IN:</div>
-                <div class="ticker-window">
-                    <div class="ticker-items">
-                        <span>SOLAR CELL PRODUCTION</span> • 
-                        <span>SEMICONDUCTOR FABRICATION [CPU / GPU]</span> • 
-                        <span>MOBILITY PARTS ASSEMBLY</span> • 
-                        <span>FOOD PROCESSING</span> •
- 			<span>ENERGY PRODUCTION & CONTROL</span> •
-                        <!-- Duplikat für nahtlosen Loop -->
-                        <span>SOLAR CELL PRODUCTION</span> • 
-                        <span>SEMICONDUCTOR FABRICATION [CPU / GPU]</span> • 
-                        <span>MOBILITY PARTS ASSEMBLY</span> • 
-                        <span>FOOD PROCESSING</span> •
- 			<span>ENERGY PRODUCTION & CONTROL</span> •
+            <div class="section-intro reveal">
+                <span class="eyebrow">02 // GENERATED SHOPFLOOR</span>
+                <h2>Nobody designed this floor.<br>It was grown.</h2>
+                <p>Total layout, index positions, buffer sizes, machine placement — a snapshot of one factory
+                hallucinated into existence by the system, then hardened by physics.</p>
+            </div>
+
+            <div class="blueprint-container reveal">
+                <div class="blueprint-head">
+                    <span class="blueprint-label">FIG 2.0 — GEN-0917 · FULL PLANT SIMULATION</span>
+                    <span class="blueprint-status"><span class="blink"></span> SYNTHESIZING CELL 04…</span>
+                </div>
+
+                <svg class="blueprint-svg" viewBox="0 0 1000 640" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(94,234,212,0.05)" stroke-width="1"/>
+                        </pattern>
+                        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+                            <path d="M0,0 L0,6 L9,3 z" fill="#5eead4"/>
+                        </marker>
+                    </defs>
+                    <rect width="1000" height="640" fill="url(#grid)"/>
+
+                    <!-- Building shell -->
+                    <rect x="30" y="30" width="940" height="580" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+                    <text x="46" y="56" fill="rgba(255,255,255,0.35)" font-family="'Space Mono'" font-size="10">PLANT GEN-0917 // FOOTPRINT 118 × 72 m</text>
+
+                    <!-- Intake bay -->
+                    <g class="bay">
+                        <rect x="30" y="240" width="70" height="160" fill="rgba(94,234,212,0.06)" stroke="rgba(94,234,212,0.5)"/>
+                        <text x="65" y="326" transform="rotate(-90 65 326)" text-anchor="middle" fill="#5eead4" font-family="'Space Mono'" font-size="10">RAW INTAKE</text>
+                    </g>
+
+                    <!-- Main conveyor spine -->
+                    <line x1="100" y1="320" x2="900" y2="320" stroke="rgba(255,255,255,0.35)" stroke-width="6" stroke-dasharray="14 8"/>
+                    <text x="100" y="300" fill="rgba(255,255,255,0.3)" font-family="'Space Mono'" font-size="9">SPINE_CONVEYOR // 1.8 m/s</text>
+
+                    <!-- Cells top row -->
+                    <g class="cell">
+                        <rect x="150" y="90" width="180" height="140" stroke="rgba(255,255,255,0.3)" fill="rgba(255,255,255,0.02)"/>
+                        <text x="162" y="112" fill="#fff" font-family="'Space Mono'" font-size="10">CELL_01 · CNC</text>
+                        <circle cx="240" cy="170" r="28" stroke="rgba(255,255,255,0.25)"/>
+                        <line x1="240" y1="170" x2="262" y2="152" stroke="rgba(94,234,212,0.8)"/>
+                        <circle cx="315" cy="200" r="3" fill="#5eead4" class="blink-slow"/>
+                    </g>
+                    <g class="cell">
+                        <rect x="380" y="90" width="180" height="140" stroke="rgba(255,255,255,0.3)" fill="rgba(255,255,255,0.02)"/>
+                        <text x="392" y="112" fill="#fff" font-family="'Space Mono'" font-size="10">CELL_02 · PRESS</text>
+                        <path d="M430 200 L470 200 L470 150 L430 150 Z" stroke="rgba(255,255,255,0.25)"/>
+                        <path d="M440 150 L440 135 L460 135 L460 150" stroke="rgba(94,234,212,0.8)">
+                            <animate attributeName="d" values="M440 150 L440 135 L460 135 L460 150; M440 150 L440 155 L460 155 L460 150; M440 150 L440 135 L460 135 L460 150" dur="2.4s" repeatCount="indefinite"/>
+                        </path>
+                    </g>
+                    <g class="cell growing">
+                        <rect x="610" y="90" width="180" height="140" stroke="rgba(163,230,53,0.6)" fill="rgba(163,230,53,0.04)" stroke-dasharray="6 4">
+                            <animate attributeName="opacity" values="0.5;1;0.5" dur="1.6s" repeatCount="indefinite"/>
+                        </rect>
+                        <text x="622" y="112" fill="#a3e635" font-family="'Space Mono'" font-size="10">CELL_04 · GENERATING…</text>
+                        <path d="M640 150 L700 190 L760 150 L700 170 Z" stroke="rgba(163,230,53,0.7)"/>
+                    </g>
+                    <g class="cell">
+                        <rect x="810" y="90" width="130" height="140" stroke="rgba(255,255,255,0.3)" fill="rgba(255,255,255,0.02)"/>
+                        <text x="822" y="112" fill="#fff" font-family="'Space Mono'" font-size="10">CELL_05 · QC</text>
+                        <circle cx="875" cy="165" r="22" stroke="rgba(94,234,212,0.6)"/>
+                        <circle cx="875" cy="165" r="22" stroke="rgba(94,234,212,0.25)">
+                            <animate attributeName="r" values="22;34" dur="2s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" values="0.6;0" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+                    </g>
+
+                    <!-- Cells bottom row -->
+                    <g class="cell">
+                        <rect x="150" y="420" width="180" height="140" stroke="rgba(255,255,255,0.3)" fill="rgba(255,255,255,0.02)"/>
+                        <text x="162" y="442" fill="#fff" font-family="'Space Mono'" font-size="10">CELL_03 · WELD</text>
+                        <path d="M190 520 L280 520 M210 500 L210 540 M260 500 L260 540" stroke="rgba(255,255,255,0.25)"/>
+                        <circle cx="235" cy="520" r="4" fill="#f59e0b" class="blink-fast"/>
+                    </g>
+                    <g class="cell">
+                        <rect x="380" y="420" width="410" height="140" stroke="rgba(255,255,255,0.3)" fill="rgba(255,255,255,0.02)"/>
+                        <text x="392" y="442" fill="#fff" font-family="'Space Mono'" font-size="10">ASSEMBLY LINE · 4 STATIONS · GENERATED KINEMATICS</text>
+                        <path d="M410 490 h70 v50 h-70 z M510 490 h70 v50 h-70 z M610 490 h70 v50 h-70 z M710 490 h70 v50 h-70 z" stroke="rgba(255,255,255,0.25)"/>
+                        <text x="445" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="8">ST-1</text>
+                        <text x="545" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="8">ST-2</text>
+                        <text x="645" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="8">ST-3</text>
+                        <text x="745" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="8">ST-4</text>
+                    </g>
+                    <g class="cell">
+                        <rect x="810" y="420" width="130" height="140" stroke="rgba(255,255,255,0.3)" fill="rgba(255,255,255,0.02)"/>
+                        <text x="822" y="442" fill="#fff" font-family="'Space Mono'" font-size="10">OUTBOUND</text>
+                        <path d="M838 500 l24 -14 24 14 -24 14 z" stroke="rgba(255,255,255,0.3)"/>
+                        <path d="M838 540 l24 -14 24 14 -24 14 z" stroke="rgba(255,255,255,0.3)"/>
+                    </g>
+
+                    <!-- AGV feeders -->
+                    <path id="agvPathA" d="M100 330 L240 330 L240 390 L330 390 L330 470 L380 470" stroke="none"/>
+                    <path id="agvPathB" d="M900 330 L760 330 L760 380 L620 380 L620 470 L560 470" stroke="none"/>
+                    <circle r="4" fill="#5eead4"><animateMotion dur="6s" repeatCount="indefinite"><mpath xlink:href="#agvPathA" href="#agvPathA"/></animateMotion></circle>
+                    <circle r="4" fill="#94a3b8"><animateMotion dur="7.5s" begin="2s" repeatCount="indefinite"><mpath xlink:href="#agvPathB" href="#agvPathB"/></animateMotion></circle>
+
+                    <!-- Product flow on spine -->
+                    <circle r="3" fill="#fff"><animateMotion dur="5s" repeatCount="indefinite" path="M100 320 L900 320"/></circle>
+                    <circle r="3" fill="#fff"><animateMotion dur="5s" begin="2.5s" repeatCount="indefinite" path="M900 320 L100 320"/></circle>
+
+                    <!-- Sensor crosslinks -->
+                    <path d="M330 320 L330 230 M560 390 L560 320" stroke="rgba(94,234,212,0.25)" stroke-dasharray="3 3"/>
+
+                    <!-- OEE readout -->
+                    <g font-family="'Space Mono'" font-size="10" fill="rgba(255,255,255,0.5)">
+                        <text x="46" y="596">OEE 94.2% ▲</text>
+                        <text x="170" y="596">TAKT 21.8 s</text>
+                        <text x="290" y="596">ENERGY −17%</text>
+                        <text x="430" y="596">SCRAP 0.04%</text>
+                        <text x="720" y="596" fill="#a3e635">REGENERATION #3,204</text>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="stat-row reveal">
+                <div class="stat"><span class="stat-num" data-target="41">0</span><span class="stat-unit">sec</span><p>to synthesize a complete machine geometry</p></div>
+                <div class="stat"><span class="stat-num" data-target="1247">0</span><span class="stat-unit">parts</span><p>generated per cell — geometry, sensor set, kinematics</p></div>
+                <div class="stat"><span class="stat-num" data-target="1000">0</span><span class="stat-unit">years</span><p>of simulated operation before a bolt is ordered</p></div>
+                <div class="stat"><span class="stat-num" data-target="0">0</span><span class="stat-unit">lines</span><p>of PLC or robot code written by humans</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Machinery -->
+    <section id="machines" class="section">
+        <div class="container">
+            <div class="split-grid">
+                <div class="reveal">
+                    <span class="eyebrow">03 // SYNTHESIZED MACHINERY</span>
+                    <h2 class="h2-left">Machines no human has drawn</h2>
+                    <p class="body-text">
+                        Our generative models design the equipment itself — gantry systems, multi-axis
+                        machining heads, presses, welders, test rigs — each one optimized for a single
+                        product family, each one different. Mass production finally stops running on
+                        mass-produced machines.
+                    </p>
+                    <ul class="tech-list">
+                        <li>
+                            <strong>Geometry is generated.</strong>
+                            Structures grown toward load paths: lighter, stiffer, manufacturable the day they are imagined.
+                        </li>
+                        <li>
+                            <strong>Kinematics are generated.</strong>
+                            Motion, force and cycle behavior emerge from simulation — the machine learns its own body before it exists.
+                        </li>
+                        <li>
+                            <strong>Cognition is built in.</strong>
+                            Long before their first shift, every machine carries a living model of itself into the building and keeps reasoning inside the control loop.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="machine-visual reveal">
+                    <div class="blueprint-label-inline">FIG 3.0 — GANTRY MR-7X · DRAWN BY MODEL</div>
+                    <svg class="machine-svg" viewBox="0 0 520 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Base -->
+                        <rect class="draw d1" pathLength="1" x="60" y="400" width="400" height="20" />
+                        <line class="draw d1" pathLength="1" x1="80" y1="420" x2="80" y2="440"/>
+                        <line class="draw d1" pathLength="1" x1="440" y1="420" x2="440" y2="440"/>
+                        <!-- Columns + gantry -->
+                        <line class="draw d2" pathLength="1" x1="100" y1="400" x2="100" y2="80"/>
+                        <line class="draw d2" pathLength="1" x1="420" y1="400" x2="420" y2="80"/>
+                        <line class="draw d2" pathLength="1" x1="100" y1="80" x2="420" y2="80"/>
+                        <!-- Cross beam coordinates rail -->
+                        <line class="draw d3" pathLength="1" x1="100" y1="110" x2="420" y2="110" stroke-dasharray="8 6"/>
+                        <!-- Z carriage -->
+                        <line class="draw d3" pathLength="1" x1="260" y1="80" x2="260" y2="110"/>
+                        <rect class="draw d3" pathLength="1" x="235" y="110" width="50" height="34"/>
+                        <line class="draw d4" pathLength="1" x1="260" y1="144" x2="260" y2="196"/>
+                        <!-- Spindle head -->
+                        <path class="draw d4" pathLength="1" d="M240 196 L280 196 L270 236 L250 236 Z"/>
+                        <line class="draw d5" pathLength="1" x1="260" y1="236" x2="260" y2="262">
+                            <animate attributeName="y2" values="268;250;268" dur="1.6s" repeatCount="indefinite"/>
+                        </line>
+                        <!-- Workpiece -->
+                        <rect class="draw d5" pathLength="1" x="205" y="352" width="110" height="48"/>
+                        <text x="260" y="380" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-family="'Space Mono'" font-size="9">WORKPIECE</text>
+                        <!-- Sensing fan -->
+                        <path class="draw d6" pathLength="1" d="M260 262 L220 320 M260 262 L300 320 M260 262 L260 330" stroke-dasharray="3 3"/>
+                        <circle cx="220" cy="320" r="2.5" fill="#5eead4"/>
+                        <circle cx="300" cy="320" r="2.5" fill="#5eead4"/>
+                        <circle cx="260" cy="330" r="2.5" fill="#5eead4"/>
+                        <!-- Dimension callouts -->
+                        <g class="dims" font-family="'Space Mono'" font-size="9" fill="rgba(94,234,212,0.75)">
+                            <text x="430" y="115">X — generated</text>
+                            <text x="290" y="130">Y</text>
+                            <text x="270" y="180">Z 730 mm</text>
+                            <text x="60" y="70">REACH · PAYLOAD · STIFFNESS — ALL OPTIMIZED</text>
+                        </g>
+                    </svg>
+                    <div class="machine-caption">
+                        <span>Model output — not a CAD import.</span>
+                        <span class="mono">vrm loss −31% / mass −22% vs. reference</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Problem/Solution Grid -->
-    <section id="research" class="section">
+    <!-- The Shift -->
+    <section id="shift" class="section section-dark">
         <div class="container">
-            <div class="split-grid">
-                <div class="split-col">
-                    <span class="eyebrow">02 // The Research Gap</span>
-                    <h2>Deterministic Limits vs.<br>Cognitive Control</h2>
+            <div class="section-intro reveal">
+                <span class="eyebrow">04 // THE SHIFT</span>
+                <h2>Industry stopped evolving.<br>So we taught it to regenerate.</h2>
+            </div>
+
+            <div class="compare-grid reveal">
+                <div class="compare-col old">
+                    <div class="compare-tag">THE LAST 30 YEARS</div>
+                    <ul>
+                        <li>Layout frozen on day one</li>
+                        <li>Machines bought from catalogs</li>
+                        <li>AI bolted on as monitoring</li>
+                        <li>Every product change costs a re-engineering project</li>
+                        <li>Knowledge lives in silos and retires with people</li>
+                    </ul>
                 </div>
-                <div class="split-col">
-                    <p class="body-text">
-                        Current industrial systems rely on architectures defined three decades ago. They are rigid and siloed, restricting AI to passive monitoring rather than unlocking its adaptive potential directly within the active control loop.
-                    </p>
-                    <ul class="tech-list">
-                        <li>
-                            <strong>The Old Way:</strong> Rigid, pre-programmed logic loops. AI is isolated as an afterthought, blind to real-time execution.
-                        </li>
-                        <li>
-                            <strong>The Plott Way:</strong> Unified next-generation architecture. No programming needed, any system is generated individually. Continuous cognitive reasoning embedded natively inside the deterministic control loop.
-                        </li>
+                <div class="compare-col new">
+                    <div class="compare-tag">THE PLOTT WAY</div>
+                    <ul>
+                        <li>The floor re-generates when the product changes</li>
+                        <li>Machines designed per product family, on demand</li>
+                        <li>AI is the control loop — deterministic, sub-millisecond, reasoning</li>
+                        <li>Variation is absorbed in software, not in budgets</li>
+                        <li>The system accumulates every plant it ever ran</li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Domains -->
-    <section id="domains" class="section">
-        <div class="container">
-            <div class="cards-grid">
+            <div class="cards-grid reveal">
                 <article class="card-minimal">
                     <div class="card-num">01</div>
                     <h3>Semiconductors</h3>
-                    <p>Nanometer precision enhanced by cognitive error-prediction models that adaptively self-correct variations before they happen.</p>
+                    <p>Fabs regenerated around nanometer variation windows — cognitive error prediction self-corrects processes before defects can exist.</p>
                 </article>
                 <article class="card-minimal">
                     <div class="card-num">02</div>
                     <h3>Mobility</h3>
-                    <p>Truly autonomous production environments where the control loop understands product variations and self-reconfigures dynamically.</p>
+                    <p>Lines that reconfigure themselves for each platform. Battery, drive unit, chassis — the factory re-designs its cells per variant, overnight.</p>
                 </article>
                 <article class="card-minimal">
                     <div class="card-num">03</div>
                     <h3>Energy</h3>
-                    <p>Intelligent grid synchronization driven by autonomous decision-making loops that dynamically optimize stability under volatile conditions.</p>
+                    <p>Grid and plant control synthesized as one system: autonomous decision loops that keep generation stable under any volatility.</p>
                 </article>
             </div>
         </div>
@@ -272,9 +381,11 @@
 
     <!-- CTA -->
     <section class="section cta-section">
-        <div class="container center-text">
-            <h2 class="large-heading">Ready to architect<br>the next decade?</h2>
-            <p class="mb-2">We are selecting partners for our Q4 deployment cycle.</p>
+        <div class="bg-glow cta-glow" aria-hidden="true"></div>
+        <div class="container center-text reveal">
+            <span class="eyebrow">05 // EARLY ACCESS</span>
+            <h2 class="large-heading">Describe what<br>you want to build.</h2>
+            <p class="mb-2">We are selecting a small group of industrial partners for our next deployment cycle. The machines, the floor, the intelligence — generated together.</p>
             <button class="btn-primary modal-trigger">Request Access</button>
         </div>
     </section>
@@ -284,12 +395,13 @@
         <div class="container footer-inner">
             <div class="footer-brand">
                 <span class="logo">PLOTT AI</span>
-                <p class="small">Industrial Intelligence Research Lab.</p>
+                <p class="small">Generative Industry Research Lab.</p>
             </div>
             <div class="footer-links">
-                <a href="#">System</a>
-                <a href="#">Research</a>
-                <a href="#">Contact</a>
+                <a href="#pipeline">Pipeline</a>
+                <a href="#shopfloor">Shopfloor</a>
+                <a href="#machines">Machinery</a>
+                <a href="#shift">The Shift</a>
             </div>
             <div class="copyright">© 2026 Plott AI Labs.</div>
         </div>
@@ -300,24 +412,182 @@
         <div class="modal">
             <button class="modal-close modal-trigger">×</button>
             <h3>Early Access Program</h3>
-            <p>We work directly with engineering leaders to deploy the new stack.</p>
+            <p>We work directly with engineering leaders to generate their next plant.</p>
             <a href="mailto:v.carlucci@hotmail.com" class="email-link">v.carlucci@hotmail.com</a>
         </div>
     </div>
 
     <script>
-        // Simple Modal Logic
+        /* ---------- Modal ---------- */
         const triggers = document.querySelectorAll('.modal-trigger');
         const overlay = document.getElementById('earlyAccessModal');
-        
         triggers.forEach(t => t.addEventListener('click', (e) => {
             e.preventDefault();
             overlay.classList.toggle('active');
         }));
-
         overlay.addEventListener('click', (e) => {
-            if(e.target === overlay) overlay.classList.remove('active');
+            if (e.target === overlay) overlay.classList.remove('active');
         });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') overlay.classList.remove('active');
+        });
+
+        /* ---------- Scroll reveal ---------- */
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(en => {
+                if (en.isIntersecting) { en.target.classList.add('visible'); io.unobserve(en.target); }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+        /* ---------- Machine draw-on-scroll ---------- */
+        const machineIO = new IntersectionObserver((entries) => {
+            entries.forEach(en => {
+                if (en.isIntersecting) { en.target.classList.add('drawn'); machineIO.unobserve(en.target); }
+            });
+        }, { threshold: 0.3 });
+        document.querySelectorAll('.machine-svg').forEach(el => machineIO.observe(el));
+
+        /* ---------- Animated counters ---------- */
+        const counterIO = new IntersectionObserver((entries) => {
+            entries.forEach(en => {
+                if (!en.isIntersecting) return;
+                counterIO.unobserve(en.target);
+                const target = +en.target.dataset.target;
+                const start = performance.now(), dur = 1600;
+                const step = (now) => {
+                    const p = Math.min((now - start) / dur, 1);
+                    const eased = 1 - Math.pow(1 - p, 3);
+                    en.target.textContent = Math.round(target * eased).toLocaleString('en-US');
+                    if (p < 1) requestAnimationFrame(step);
+                };
+                requestAnimationFrame(step);
+            });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('.stat-num').forEach(el => counterIO.observe(el));
+
+        /* ---------- Terminal typing ---------- */
+        const termEl = document.getElementById('terminal');
+        const script = [
+            { text: '> generate shopfloor --product "ev-battery-module" --takt 22s', cls: 'cmd' },
+            { text: '  constraints: footprint 118m · class-A clean · ΔT < 14°C', cls: 'dim' },
+            { text: '  synthesizing layout … 3 candidate topologies', cls: 'dim' },
+            { text: '  growing machine MR-7X … 1,247 components  [00:41]', cls: 'dim' },
+            { text: '  simulating 10⁴ operating years … 0 critical faults', cls: 'dim' },
+            { text: '✓ GEN-0917 ready — control loop armed', cls: 'ok' },
+            { text: '> vary: add 400V pack variant, takt unchanged', cls: 'cmd' },
+            { text: '✓ regeneration #3,205 complete — floor adapted in 0.8 s', cls: 'ok' }
+        ];
+        let lineIdx = 0, charIdx = 0, currentLine;
+        function typeLoop() {
+            if (lineIdx >= script.length) {
+                setTimeout(() => { termEl.innerHTML = ''; lineIdx = 0; charIdx = 0; typeLoop(); }, 4200);
+                return;
+            }
+            const item = script[lineIdx];
+            if (charIdx === 0) {
+                currentLine = document.createElement('div');
+                currentLine.className = 'term-line ' + (item.cls || '');
+                termEl.appendChild(currentLine);
+            }
+            currentLine.textContent = item.text.slice(0, ++charIdx);
+            if (charIdx >= item.text.length) { lineIdx++; charIdx = 0; setTimeout(typeLoop, item.cls === 'cmd' ? 550 : 260); }
+            else setTimeout(typeLoop, 14 + Math.random() * 22);
+        }
+        typeLoop();
+
+        /* ---------- Generative factory canvas (hero) ---------- */
+        const canvas = document.getElementById('genCanvas');
+        const ctx = canvas.getContext('2d');
+        const GRID = 24;
+        let rects = [], W = 0, H = 0, dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const LABELS = ['CELL', 'CONV', 'ROB', 'PRESS', 'BUF', 'QC', 'WELD'];
+
+        function resize() {
+            W = canvas.offsetWidth; H = canvas.offsetHeight;
+            canvas.width = W * dpr; canvas.height = H * dpr;
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        const snap = v => Math.round(v / GRID) * GRID;
+
+        function spawn() {
+            const w = snap(60 + Math.random() * 190);
+            const h = snap(50 + Math.random() * 130);
+            rects.push({
+                x: snap(Math.random() * (W - w)), y: snap(Math.random() * (H - h)),
+                w, h, t: 0, fade: 1, age: 0,
+                label: LABELS[Math.floor(Math.random() * LABELS.length)] + '_' + String(10 + Math.floor(Math.random() * 89))
+            });
+        }
+
+        function drawPartialRect(x, y, w, h, t) {
+            const per = 2 * (w + h), len = per * t;
+            const sides = [[x, y, x + w, y], [x + w, y, x + w, y + h], [x + w, y + h, x, y + h], [x, y + h, x, y]];
+            let remain = len;
+            for (const [x1, y1, x2, y2] of sides) {
+                const sl = Math.hypot(x2 - x1, y2 - y1);
+                if (remain <= 0) break;
+                const p = Math.min(remain / sl, 1);
+                ctx.moveTo(x1, y1);
+                ctx.lineTo(x1 + (x2 - x1) * p, y1 + (y2 - y1) * p);
+                remain -= sl;
+            }
+        }
+
+        let scanX = 0;
+        function frame(now) {
+            ctx.clearRect(0, 0, W, H);
+
+            if (rects.length < 22 && Math.random() < 0.05) spawn();
+
+            for (let i = rects.length - 1; i >= 0; i--) {
+                const r = rects[i];
+                r.t = Math.min(r.t + 0.008, 1);
+                r.age++;
+                if (r.age > 560) r.fade -= 0.004;
+                if (r.fade <= 0) { rects.splice(i, 1); continue; }
+
+                const alpha = Math.min(r.t * 1.6, 0.7) * r.fade;
+                const fresh = r.t < 1;
+                ctx.strokeStyle = fresh ? 'rgba(94,234,212,' + alpha + ')' : 'rgba(148,163,184,' + (alpha * 0.45) + ')';
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                drawPartialRect(r.x, r.y, r.w, r.h, r.t);
+                ctx.stroke();
+
+                if (r.t > 0.8) {
+                    ctx.fillStyle = 'rgba(94,234,212,' + (alpha * 0.25) + ')';
+                    ctx.fillRect(r.x, r.y, r.w, r.h);
+                    ctx.fillStyle = 'rgba(255,255,255,' + (alpha * 0.5) + ')';
+                    ctx.font = '9px "Space Mono", monospace';
+                    ctx.fillText(r.label, r.x + 6, r.y + 13);
+                    // crosshair corners
+                    ctx.strokeStyle = 'rgba(94,234,212,' + (alpha * 0.6) + ')';
+                    [[r.x, r.y], [r.x + r.w, r.y + r.h]].forEach(([cx, cy]) => {
+                        ctx.beginPath();
+                        ctx.moveTo(cx - 5, cy); ctx.lineTo(cx + 5, cy);
+                        ctx.moveTo(cx, cy - 5); ctx.lineTo(cx, cy + 5);
+                        ctx.stroke();
+                    });
+                }
+            }
+
+            // scan line sweeping the floor
+            scanX = (scanX + 0.6) % (W + 100);
+            const g = ctx.createLinearGradient(scanX - 60, 0, scanX, 0);
+            g.addColorStop(0, 'rgba(94,234,212,0)');
+            g.addColorStop(1, 'rgba(94,234,212,0.10)');
+            ctx.fillStyle = g;
+            ctx.fillRect(scanX - 60, 0, 60, H);
+            ctx.fillStyle = 'rgba(94,234,212,0.25)';
+            ctx.fillRect(scanX, 0, 1, H);
+
+            requestAnimationFrame(frame);
+        }
+        requestAnimationFrame(frame);
     </script>
 </body>
 </html>
