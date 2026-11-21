@@ -109,9 +109,38 @@ h2 {
 .body-text { color: var(--text-muted); margin-bottom: 2rem; }
 .mono { font-family: var(--font-tech); }
 
+/* ---------- Top info bar ---------- */
+.topbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.9rem;
+    padding: 0.55rem 2rem;
+    font-family: var(--font-tech);
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+}
+
+.topbar-tag {
+    color: var(--bg);
+    background: var(--accent);
+    padding: 0.15rem 0.55rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+
+.topbar-text { white-space: nowrap; }
+
 /* ---------- Navigation ---------- */
 .nav {
-    position: fixed; top: 0; left: 0; right: 0;
+    position: sticky; top: 0; left: 0; right: 0;
     padding: 1.1rem 0;
     z-index: 100;
     background: rgba(3, 5, 4, 0.75);
@@ -170,7 +199,7 @@ h2 {
 /* ---------- Hero ---------- */
 .hero {
     position: relative;
-    padding: 11rem 0 6rem;
+    padding: 6rem 0 6rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -544,6 +573,9 @@ h2 {
 
 @media (max-width: 700px) {
     .hero { padding-top: 8rem; }
+    .topbar { padding: 0.5rem 1rem; font-size: 0.62rem; }
+    .topbar-text { white-space: normal; line-height: 1.5; }
+    .topbar-tag { font-size: 0.58rem; }
     .hero-meta-row { flex-wrap: wrap; gap: 1.5rem; }
     .nav-links a { display: none; }
     .pipeline { grid-template-columns: 1fr; }
