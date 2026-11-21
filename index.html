@@ -102,7 +102,7 @@
                 <div class="pipe-stage">
                     <div class="pipe-num">01</div>
                     <h3>Define</h3>
-                    <p>Define. Group your devices in your cell, describe the system layout by a simple flow diagram or a description. The AI holds everything else.</p>
+                    <p>Group and define your required devices in your cell, describe the system layout by a simple flow diagram or a description. The AI holds everything else.</p>
                 </div>
                 <div class="pipe-stage">
                     <div class="pipe-num">02</div>
@@ -153,7 +153,7 @@
 
                     <!-- Building shell -->
                     <rect x="30" y="30" width="940" height="580" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
-                    <text x="46" y="56" fill="rgba(255,255,255,0.35)" font-family="'Space Mono'" font-size="10">PLANT GEN-0917 // FOOTPRINT 118 × 72 m</text>
+                    <text x="46" y="56" fill="rgba(255,255,255,0.35)" font-family="'Space Mono'" font-size="10">CELL GEN-0917 // FOOTPRINT 118 × 72 m</text>
 
                     <!-- Intake bay -->
                     <g class="bay">
@@ -165,32 +165,32 @@
                     <line x1="100" y1="320" x2="900" y2="320" stroke="rgba(255,255,255,0.35)" stroke-width="6" stroke-dasharray="14 8"/>
                     <text x="100" y="300" fill="rgba(255,255,255,0.3)" font-family="'Space Mono'" font-size="9">SPINE_CONVEYOR // 1.8 m/s</text>
 
-                    <!-- Cells top row -->
-                    <g class="cell">
+                    <!-- SUB-MODULEs top row -->
+                    <g class="SUB-MODULE">
                         <rect x="150" y="90" width="180" height="140" stroke="rgba(255,255,255,0.3)" fill="rgba(255,255,255,0.02)"/>
-                        <text x="162" y="112" fill="#fff" font-family="'Space Mono'" font-size="10">CELL_01</text>
+                        <text x="162" y="112" fill="#fff" font-family="'Space Mono'" font-size="10">SUB-MODULE_01 · Data / ML</text>
                         <circle cx="240" cy="170" r="28" stroke="rgba(255,255,255,0.25)"/>
                         <line x1="240" y1="170" x2="262" y2="152" stroke="rgba(94,234,212,0.8)"/>
                         <circle cx="315" cy="200" r="3" fill="#5eead4" class="blink-slow"/>
                     </g>
-                    <g class="cell">
+                    <g class="SUB-MODULE">
                         <rect x="380" y="90" width="180" height="140" stroke="rgba(255,255,255,0.3)" fill="rgba(255,255,255,0.02)"/>
-                        <text x="392" y="112" fill="#fff" font-family="'Space Mono'" font-size="10">CELL_02 · Analyzing</text>
+                        <text x="392" y="112" fill="#fff" font-family="'Space Mono'" font-size="10">SUB-MODULE_02 · Analyzing</text>
                         <path d="M430 200 L470 200 L470 150 L430 150 Z" stroke="rgba(255,255,255,0.25)"/>
                         <path d="M440 150 L440 135 L460 135 L460 150" stroke="rgba(94,234,212,0.8)">
                             <animate attributeName="d" values="M440 150 L440 135 L460 135 L460 150; M440 150 L440 155 L460 155 L460 150; M440 150 L440 135 L460 135 L460 150" dur="2.4s" repeatCount="indefinite"/>
                         </path>
                     </g>
-                    <g class="cell growing">
+                    <g class="SUB-MODULE growing">
                         <rect x="610" y="90" width="180" height="140" stroke="rgba(163,230,53,0.6)" fill="rgba(163,230,53,0.04)" stroke-dasharray="6 4">
                             <animate attributeName="opacity" values="0.5;1;0.5" dur="1.6s" repeatCount="indefinite"/>
                         </rect>
-                        <text x="622" y="112" fill="#a3e635" font-family="'Space Mono'" font-size="10">CELL_04 · GENERATING…</text>
+                        <text x="622" y="112" fill="#a3e635" font-family="'Space Mono'" font-size="10">SUB-MODULE_04 · GENERATING…</text>
                         <path d="M640 150 L700 190 L760 150 L700 170 Z" stroke="rgba(163,230,53,0.7)"/>
                     </g>
-                    <g class="cell">
+                    <g class="SUB-MODULE">
                         <rect x="810" y="90" width="130" height="140" stroke="rgba(255,255,255,0.3)" fill="rgba(255,255,255,0.02)"/>
-                        <text x="822" y="112" fill="#fff" font-family="'Space Mono'" font-size="10">CELL_05 · QC</text>
+                        <text x="822" y="112" fill="#fff" font-family="'Space Mono'" font-size="10">SUB-MODULE_05 · QC</text>
                         <circle cx="875" cy="165" r="22" stroke="rgba(94,234,212,0.6)"/>
                         <circle cx="875" cy="165" r="22" stroke="rgba(94,234,212,0.25)">
                             <animate attributeName="r" values="22;34" dur="2s" repeatCount="indefinite"/>
@@ -198,23 +198,23 @@
                         </circle>
                     </g>
 
-                    <!-- Cells bottom row -->
-                    <g class="cell">
+                    <!-- SUB-MODULEs bottom row -->
+                    <g class="SUB-MODULE">
                         <rect x="150" y="420" width="180" height="140" stroke="rgba(255,255,255,0.3)" fill="rgba(255,255,255,0.02)"/>
-                        <text x="162" y="442" fill="#fff" font-family="'Space Mono'" font-size="10">CELL_03 · Control</text>
+                        <text x="162" y="442" fill="#fff" font-family="'Space Mono'" font-size="10">SUB-MODULE_03 · Control</text>
                         <path d="M190 520 L280 520 M210 500 L210 540 M260 500 L260 540" stroke="rgba(255,255,255,0.25)"/>
                         <circle cx="235" cy="520" r="4" fill="#f59e0b" class="blink-fast"/>
                     </g>
-                    <g class="cell">
+                    <g class="SUB-MODULE">
                         <rect x="380" y="420" width="410" height="140" stroke="rgba(255,255,255,0.3)" fill="rgba(255,255,255,0.02)"/>
-                        <text x="392" y="442" fill="#fff" font-family="'Space Mono'" font-size="10">ASSEMBLY CELL · 4 MODULES · CONTROL + WIRING GENERATED</text>
+                        <text x="392" y="442" fill="#fff" font-family="'Space Mono'" font-size="10">ASSEMBLY SUB-MODULE · 4 MODULES · CONTROL + WIRING GENERATED</text>
                         <path d="M410 490 h70 v50 h-70 z M510 490 h70 v50 h-70 z M610 490 h70 v50 h-70 z M710 490 h70 v50 h-70 z" stroke="rgba(255,255,255,0.25)"/>
                         <text x="445" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="8">MOD-1</text>
                         <text x="545" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="8">MOD-2</text>
                         <text x="645" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="8">MOD-3</text>
                         <text x="745" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="8">MOD-4</text>
                     </g>
-                    <g class="cell">
+                    <g class="SUB-MODULE">
                         <rect x="810" y="420" width="130" height="140" stroke="rgba(255,255,255,0.3)" fill="rgba(255,255,255,0.02)"/>
                         <text x="822" y="442" fill="#fff" font-family="'Space Mono'" font-size="10">OUTBOUND</text>
                         <path d="M838 500 l24 -14 24 14 -24 14 z" stroke="rgba(255,255,255,0.3)"/>
@@ -240,7 +240,7 @@
                         <text x="170" y="596">TAKT 21.8 s</text>
                         <text x="290" y="596">ENERGY −17%</text>
                         <text x="430" y="596">SCRAP 0.04%</text>
-                        <text x="720" y="596" fill="#a3e635">REGENERATION #3,204</text>
+                        <text x="720" y="596" fill="#a3e635">REGENERATION #3,204</text>		
                     </g>
                 </svg>
             </div>
@@ -313,23 +313,6 @@
                 </div>
             </div>
 
-            <div class="cards-grid reveal">
-                <article class="card-minimal">
-                    <div class="card-num">01</div>
-                    <h3>Semiconductors</h3>
-                    <p>Handling and inspection modules generated around nanometer variation windows: cognitive error prediction self-corrects processes before defects can exist.</p>
-                </article>
-                <article class="card-minimal">
-                    <div class="card-num">02</div>
-                    <h3>Mobility</h3>
-                    <p>Cells that regenerate themselves per variant. Battery, drive unit and chassis get new joining modules, new wiring, new control. Overnight, not over quarters.</p>
-                </article>
-                <article class="card-minimal">
-                    <div class="card-num">03</div>
-                    <h3>Energy</h3>
-                    <p>Cell control and grid control synthesized as one system: autonomous decision loops that keep generation stable under any volatility.</p>
-                </article>
-            </div>
         </div>
     </section>
 

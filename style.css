@@ -1,5 +1,5 @@
 /* ============================================================
-   PLOTT AI — GENERATIVE INDUSTRY
+   PLOTT AI | GENERATIVE INDUSTRY
    Design system
    ============================================================ */
 
@@ -411,7 +411,7 @@ h2 {
 .machine-svg .dims { opacity: 0; transition: opacity 1s ease 2.9s; }
 .machine-svg.drawn .dims { opacity: 1; }
 
-/* generated field wiring — copper flow */
+/* generated field wiring, copper flow */
 .machine-svg .wires { opacity: 0; transition: opacity 1s ease 1.2s; }
 .machine-svg.drawn .wires { opacity: 1; }
 .machine-svg .wires path {
@@ -463,7 +463,7 @@ h2 {
     position: relative;
     padding-left: 1.4rem;
 }
-.compare-col.old ul li::before { content: '—'; position: absolute; left: 0; color: var(--text-dim); }
+.compare-col.old ul li::before { content: '✕'; position: absolute; left: 0; color: var(--text-dim); }
 .compare-col.new ul li { color: var(--text-main); }
 .compare-col.new ul li::before { content: '▸'; position: absolute; left: 0; color: var(--accent); }
 
