@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plott AI — The Factory That Designs Itself</title>
-    <meta name="description" content="Plott AI builds generative intelligence that designs shop floors, synthesizes complex machine equipment, and runs them — from prompt to production.">
+    <meta name="description" content="Plott AI generates complete production cells and machine modules — mechanical structure, electrical wiring, PLC control and documentation — from a single AI system, fully parametrizable in the field.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -26,8 +26,8 @@
             </a>
             <div class="nav-links">
                 <a href="#pipeline">Pipeline</a>
-                <a href="#shopfloor">Shopfloor</a>
-                <a href="#machines">Machinery</a>
+                <a href="#cells">Cells</a>
+                <a href="#modules">Modules</a>
                 <a href="#shift">The Shift</a>
                 <button class="btn-text modal-trigger">Access Program</button>
             </div>
@@ -66,10 +66,10 @@
                 </div>
                 <div class="meta-item">
                     <span class="label">Output</span>
-                    <span class="value">Shop Floors / Machinery</span>
+                    <span class="value">Production Cells / Modules</span>
                 </div>
                 <div class="meta-item">
-                    <span class="label">PLC Code Used</span>
+                    <span class="label">Human-Written PLC Code</span>
                     <span class="value">0 Lines</span>
                 </div>
             </div>
@@ -79,7 +79,7 @@
         <div class="terminal">
             <div class="terminal-head">
                 <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
-                <span class="term-title">plott://generate — shopfloor.prd</span>
+                <span class="term-title">plott://generate — cell-114.prd</span>
             </div>
             <div class="terminal-body" id="terminal"></div>
         </div>
@@ -90,9 +90,10 @@
         <div class="container">
             <div class="section-intro reveal">
                 <span class="eyebrow">01 // GENERATION PIPELINE</span>
-                <h2>From a sentence<br>to a running factory</h2>
-                <p>There is no CAD phase, no PLC engineering phase, no commissioning phase.
-                A single generative system carries the product end to end — continuously re-designing itself when reality changes.</p>
+                <h2>From one sentence<br>to a running cell</h2>
+                <p>There is no mechanical design phase, no electrical engineering phase, no PLC
+                programming phase, no documentation sprint. A single generative system carries the
+                cell end to end — and regenerates it whenever reality on the shop floor changes.</p>
             </div>
 
             <div class="pipeline reveal">
@@ -101,40 +102,41 @@
                 <div class="pipe-stage">
                     <div class="pipe-num">01</div>
                     <h3>Describe</h3>
-                    <p>The product, the takt time, the constraints. In plain language. The AI holds everything else.</p>
+                    <p>The process, the takt time, the constraints. In plain language. The AI holds everything else.</p>
                 </div>
                 <div class="pipe-stage">
                     <div class="pipe-num">02</div>
                     <h3>Generate</h3>
-                    <p>Shop floor topology, machine geometry, kinematics and control logic — synthesized as one coherent system, not assembled from catalogs.</p>
+                    <p>Production modules, electrical schematics, wiring lists, PLC and HMI code — synthesized as one coherent system, not assembled from catalogs.</p>
                 </div>
                 <div class="pipe-stage">
                     <div class="pipe-num">03</div>
                     <h3>Simulate</h3>
-                    <p>The entire plant runs digitally for thousands of operating years. Failures are found before they can exist.</p>
+                    <p>Every physical interaction — gripping, pressing, joining, releasing — is rehearsed digitally for thousands of operating years. Failures are found before they can exist.</p>
                 </div>
                 <div class="pipe-stage">
                     <div class="pipe-num">04</div>
                     <h3>Deploy</h3>
-                    <p>The same intelligence that designed the floor now operates it — reasoning inside the deterministic control loop, re-generating on every product variation.</p>
+                    <p>The same intelligence now operates the cell. And because every module is fully parametric, force, speed, position and recipes are adjusted live in the field — by the people running it.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Generated Shopfloor -->
-    <section id="shopfloor" class="section section-dark">
+    <!-- Generated Cells -->
+    <section id="cells" class="section section-dark">
         <div class="container">
             <div class="section-intro reveal">
-                <span class="eyebrow">02 // GENERATED SHOPFLOOR</span>
-                <h2>Nobody designed this floor.<br>It was grown.</h2>
-                <p>Total layout, index positions, buffer sizes, machine placement — a snapshot of one factory
-                hallucinated into existence by the system, then hardened by physics.</p>
+                <span class="eyebrow">02 // GENERATED PRODUCTION CELLS</span>
+                <h2>Nobody designs these cells.<br>They are grown.</h2>
+                <p>Module placement, buffer sizes, wiring routes, cell interfaces — every element of this plant
+                was generated by the system as one connected organism, then hardened by physics.
+                Each block below is a complete production cell, not a machine.</p>
             </div>
 
             <div class="blueprint-container reveal">
                 <div class="blueprint-head">
-                    <span class="blueprint-label">FIG 2.0 — GEN-0917 · FULL PLANT SIMULATION</span>
+                    <span class="blueprint-label">FIG 2.0 — GEN-0917 · CELLS + MODULES · PLANT SIMULATION</span>
                     <span class="blueprint-status"><span class="blink"></span> SYNTHESIZING CELL 04…</span>
                 </div>
 
@@ -205,12 +207,12 @@
                     </g>
                     <g class="cell">
                         <rect x="380" y="420" width="410" height="140" stroke="rgba(255,255,255,0.3)" fill="rgba(255,255,255,0.02)"/>
-                        <text x="392" y="442" fill="#fff" font-family="'Space Mono'" font-size="10">ASSEMBLY LINE · 4 STATIONS · GENERATED KINEMATICS</text>
+                        <text x="392" y="442" fill="#fff" font-family="'Space Mono'" font-size="10">ASSEMBLY CELL · 4 MODULES · CONTROL + WIRING GENERATED</text>
                         <path d="M410 490 h70 v50 h-70 z M510 490 h70 v50 h-70 z M610 490 h70 v50 h-70 z M710 490 h70 v50 h-70 z" stroke="rgba(255,255,255,0.25)"/>
-                        <text x="445" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="8">ST-1</text>
-                        <text x="545" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="8">ST-2</text>
-                        <text x="645" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="8">ST-3</text>
-                        <text x="745" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="8">ST-4</text>
+                        <text x="445" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="8">MOD-1</text>
+                        <text x="545" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="8">MOD-2</text>
+                        <text x="645" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="8">MOD-3</text>
+                        <text x="745" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="'Space Mono'" font-size="8">MOD-4</text>
                     </g>
                     <g class="cell">
                         <rect x="810" y="420" width="130" height="140" stroke="rgba(255,255,255,0.3)" fill="rgba(255,255,255,0.02)"/>
@@ -244,46 +246,66 @@
             </div>
 
             <div class="stat-row reveal">
-                <div class="stat"><span class="stat-num" data-target="41">0</span><span class="stat-unit">sec</span><p>to synthesize a complete machine geometry</p></div>
-                <div class="stat"><span class="stat-num" data-target="1247">0</span><span class="stat-unit">parts</span><p>generated per cell — geometry, sensor set, kinematics</p></div>
-                <div class="stat"><span class="stat-num" data-target="1000">0</span><span class="stat-unit">years</span><p>of simulated operation before a bolt is ordered</p></div>
-                <div class="stat"><span class="stat-num" data-target="0">0</span><span class="stat-unit">lines</span><p>of PLC or robot code written by humans</p></div>
+                <div class="stat"><span class="stat-num" data-target="4191">0</span><span class="stat-unit">I/O</span><p>wired, tested and documented for one generated cell</p></div>
+                <div class="stat"><span class="stat-num" data-target="0">0</span><span class="stat-unit">lines</span><p>of PLC, HMI or robot code written by human hands</p></div>
+                <div class="stat"><span class="stat-num" data-target="100">0</span><span class="stat-unit">%</span><p>of schematics, wiring lists and manuals emitted with every module</p></div>
+                <div class="stat"><span class="stat-num" data-target="800">0</span><span class="stat-unit">ms</span><p>to re-parametrize a running module in the field — no downtime</p></div>
             </div>
         </div>
     </section>
 
-    <!-- Machinery -->
-    <section id="machines" class="section">
+    <!-- Modules -->
+    <section id="modules" class="section">
         <div class="container">
             <div class="split-grid">
                 <div class="reveal">
-                    <span class="eyebrow">03 // SYNTHESIZED MACHINERY</span>
-                    <h2 class="h2-left">Machines no human has drawn</h2>
+                    <span class="eyebrow">03 // GENERATED CELL MODULES</span>
+                    <h2 class="h2-left">Modules no human has wired</h2>
                     <p class="body-text">
-                        Our generative models design the equipment itself — gantry systems, multi-axis
-                        machining heads, presses, welders, test rigs — each one optimized for a single
-                        product family, each one different. Mass production finally stops running on
-                        mass-produced machines.
+                        Our generative models produce the building blocks of production itself:
+                        pick, fit, fasten, join, test and handle modules — each one generated complete
+                        for a single process, each one different. Not machines from a catalog,
+                        but modules that were grown around your product.
                     </p>
                     <ul class="tech-list">
                         <li>
-                            <strong>Geometry is generated.</strong>
-                            Structures grown toward load paths: lighter, stiffer, manufacturable the day they are imagined.
+                            <strong>Control is generated.</strong>
+                            PLC and HMI code, fieldbus configuration, safety logic — every program proven against the real cell in simulation before a controller is powered on.
                         </li>
                         <li>
-                            <strong>Kinematics are generated.</strong>
-                            Motion, force and cycle behavior emerge from simulation — the machine learns its own body before it exists.
+                            <strong>Physical interaction is learned.</strong>
+                            How a gripper touches, presses and joins — the AI rehearses contact, force and material behavior in simulation, then encodes it into deterministic control.
                         </li>
                         <li>
-                            <strong>Cognition is built in.</strong>
-                            Long before their first shift, every machine carries a living model of itself into the building and keeps reasoning inside the control loop.
+                            <strong>Electrics are generated.</strong>
+                            Wiring harnesses, terminal lists, I/O mapping and cable routing are designed by the model — every wire sized, mapped and traceable.
+                        </li>
+                        <li>
+                            <strong>Documentation ships with the module.</strong>
+                            Schematics, BOM, commissioning and maintenance manuals are emitted by the same system. Nothing exists that is not documented.
                         </li>
                     </ul>
                 </div>
 
                 <div class="machine-visual reveal">
-                    <div class="blueprint-label-inline">FIG 3.0 — GANTRY MR-7X · DRAWN BY MODEL</div>
+                    <div class="blueprint-label-inline">FIG 3.0 — MODULE M-7X · PICK &amp; JOIN UNIT · MODEL OUTPUT</div>
                     <svg class="machine-svg" viewBox="0 0 520 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Control cabinet -->
+                        <rect class="draw d1" pathLength="1" x="14" y="180" width="66" height="120"/>
+                        <rect class="draw d1" pathLength="1" x="22" y="195" width="50" height="14"/>
+                        <rect class="draw d1" pathLength="1" x="22" y="215" width="50" height="14"/>
+                        <rect class="draw d1" pathLength="1" x="22" y="235" width="50" height="14"/>
+                        <text x="47" y="322" text-anchor="middle" fill="rgba(245,158,11,0.8)" font-family="'Space Mono'" font-size="9">CONTROL_01</text>
+                        <!-- Generated wiring: cabinet -> module -->
+                        <g class="wires">
+                            <path d="M80 205 L140 205 L140 260 L235 260" />
+                            <path d="M80 228 L128 228 L128 320 L205 320" />
+                            <path d="M80 250 C 110 250, 150 380, 205 380" />
+                        </g>
+                        <circle cx="235" cy="260" r="2.5" fill="#f59e0b"/>
+                        <circle cx="205" cy="320" r="2.5" fill="#f59e0b"/>
+                        <circle cx="205" cy="380" r="2.5" fill="#f59e0b"/>
+                        <text x="96" y="192" fill="rgba(245,158,11,0.7)" font-family="'Space Mono'" font-size="8">FIELD WIRING — 4,191 RUNS</text>
                         <!-- Base -->
                         <rect class="draw d1" pathLength="1" x="60" y="400" width="400" height="20" />
                         <line class="draw d1" pathLength="1" x1="80" y1="420" x2="80" y2="440"/>
@@ -292,38 +314,72 @@
                         <line class="draw d2" pathLength="1" x1="100" y1="400" x2="100" y2="80"/>
                         <line class="draw d2" pathLength="1" x1="420" y1="400" x2="420" y2="80"/>
                         <line class="draw d2" pathLength="1" x1="100" y1="80" x2="420" y2="80"/>
-                        <!-- Cross beam coordinates rail -->
+                        <!-- Rail -->
                         <line class="draw d3" pathLength="1" x1="100" y1="110" x2="420" y2="110" stroke-dasharray="8 6"/>
                         <!-- Z carriage -->
                         <line class="draw d3" pathLength="1" x1="260" y1="80" x2="260" y2="110"/>
                         <rect class="draw d3" pathLength="1" x="235" y="110" width="50" height="34"/>
                         <line class="draw d4" pathLength="1" x1="260" y1="144" x2="260" y2="196"/>
-                        <!-- Spindle head -->
+                        <!-- End effector / gripper head -->
                         <path class="draw d4" pathLength="1" d="M240 196 L280 196 L270 236 L250 236 Z"/>
-                        <line class="draw d5" pathLength="1" x1="260" y1="236" x2="260" y2="262">
-                            <animate attributeName="y2" values="268;250;268" dur="1.6s" repeatCount="indefinite"/>
-                        </line>
+                        <g class="grip">
+                            <line class="draw d5" pathLength="1" x1="250" y1="236" x2="250" y2="262">
+                                <animate attributeName="y2" values="262;268;262" dur="1.6s" repeatCount="indefinite"/>
+                            </line>
+                            <line class="draw d5" pathLength="1" x1="270" y1="236" x2="270" y2="262">
+                                <animate attributeName="y2" values="268;262;268" dur="1.6s" repeatCount="indefinite"/>
+                            </line>
+                        </g>
                         <!-- Workpiece -->
                         <rect class="draw d5" pathLength="1" x="205" y="352" width="110" height="48"/>
                         <text x="260" y="380" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-family="'Space Mono'" font-size="9">WORKPIECE</text>
-                        <!-- Sensing fan -->
-                        <path class="draw d6" pathLength="1" d="M260 262 L220 320 M260 262 L300 320 M260 262 L260 330" stroke-dasharray="3 3"/>
+                        <!-- Force / sensing -->
+                        <path class="draw d6" pathLength="1" d="M260 272 L220 320 M260 272 L300 320 M260 272 L260 330" stroke-dasharray="3 3"/>
                         <circle cx="220" cy="320" r="2.5" fill="#5eead4"/>
                         <circle cx="300" cy="320" r="2.5" fill="#5eead4"/>
                         <circle cx="260" cy="330" r="2.5" fill="#5eead4"/>
-                        <!-- Dimension callouts -->
+                        <!-- Parametric callouts -->
                         <g class="dims" font-family="'Space Mono'" font-size="9" fill="rgba(94,234,212,0.75)">
-                            <text x="430" y="115">X — generated</text>
-                            <text x="290" y="130">Y</text>
-                            <text x="270" y="180">Z 730 mm</text>
-                            <text x="60" y="70">REACH · PAYLOAD · STIFFNESS — ALL OPTIMIZED</text>
+                            <text x="290" y="140">FORCE 220 N — param</text>
+                            <text x="290" y="182">TAKT 21.8 s — param</text>
+                            <text x="60" y="70">STRUCTURE · WIRING · CONTROL — ONE OUTPUT, FULLY PARAMETRIC</text>
                         </g>
                     </svg>
                     <div class="machine-caption">
-                        <span>Model output — not a CAD import.</span>
-                        <span class="mono">vrm loss −31% / mass −22% vs. reference</span>
+                        <span>Model output — schematics, code and manuals included.</span>
+                        <span class="mono">4,191 terminals · 0 undocumented wires</span>
                     </div>
                 </div>
+            </div>
+
+            <!-- Deliverables strip -->
+            <div class="section-intro reveal" style="margin-top: 8rem;">
+                <span class="eyebrow">04 // EVERY CELL SHIPS COMPLETE</span>
+                <h2>Four deliverables.<br>One system. Zero handoffs.</h2>
+                <p>When a cell is generated, all four layers arrive together — consistent by construction, because the same intelligence wrote them all.</p>
+            </div>
+
+            <div class="cards-grid reveal">
+                <article class="card-minimal">
+                    <div class="card-num">E</div>
+                    <h3>Electrical Wiring</h3>
+                    <p>Complete harness design: cable sizing, terminal lists, routing and I/O mapping. Generated, simulated, and ready for the cabinet on day one.</p>
+                </article>
+                <article class="card-minimal">
+                    <div class="card-num">C</div>
+                    <h3>Control Code</h3>
+                    <p>PLC, HMI and safety programs generated and rehearsed against the physical cell in simulation — deterministic, auditable, versioned with every change.</p>
+                </article>
+                <article class="card-minimal">
+                    <div class="card-num">D</div>
+                    <h3>Documentation</h3>
+                    <p>Schematics, wiring diagrams, BOM, commissioning and maintenance manuals — emitted with the module, updated with every parameter change, automatically.</p>
+                </article>
+                <article class="card-minimal">
+                    <div class="card-num">P</div>
+                    <h3>Field Parametrization</h3>
+                    <p>Force, speed, position, recipe — every module parameter is exposed and adjustable live on the running cell. Shift leaders tune production. No engineers required.</p>
+                </article>
             </div>
         </div>
     </section>
@@ -332,16 +388,16 @@
     <section id="shift" class="section section-dark">
         <div class="container">
             <div class="section-intro reveal">
-                <span class="eyebrow">04 // THE SHIFT</span>
-                <h2>Industry stopped evolving.<br>So we taught it to regenerate.</h2>
+                <span class="eyebrow">05 // THE SHIFT</span>
+                <h2>Engineering projects took months.<br>Now generation takes a sentence.</h2>
             </div>
 
             <div class="compare-grid reveal">
                 <div class="compare-col old">
                     <div class="compare-tag">THE LAST 30 YEARS</div>
                     <ul>
-                        <li>Layout frozen on day one</li>
-                        <li>Machines bought from catalogs</li>
+                        <li>Cells assembled from catalog machines</li>
+                        <li>Electrics, control and docs engineered by separate teams</li>
                         <li>AI bolted on as monitoring</li>
                         <li>Every product change costs a re-engineering project</li>
                         <li>Knowledge lives in silos and retires with people</li>
@@ -350,11 +406,11 @@
                 <div class="compare-col new">
                     <div class="compare-tag">THE PLOTT WAY</div>
                     <ul>
-                        <li>The floor re-generates when the product changes</li>
-                        <li>Machines designed per product family, on demand</li>
-                        <li>AI is the control loop — deterministic, sub-millisecond, reasoning</li>
-                        <li>Variation is absorbed in software, not in budgets</li>
-                        <li>The system accumulates every plant it ever ran</li>
+                        <li>Cells and modules generated complete — wiring, code, docs included</li>
+                        <li>One system, one consistent output, no handoffs</li>
+                        <li>AI controls the process — deterministic, sub-millisecond, reasoning</li>
+                        <li>Every parameter adjustable live in the field — force, speed, recipe</li>
+                        <li>The system accumulates every cell it ever ran</li>
                     </ul>
                 </div>
             </div>
@@ -363,17 +419,17 @@
                 <article class="card-minimal">
                     <div class="card-num">01</div>
                     <h3>Semiconductors</h3>
-                    <p>Fabs regenerated around nanometer variation windows — cognitive error prediction self-corrects processes before defects can exist.</p>
+                    <p>Handling and inspection modules generated around nanometer variation windows — cognitive error prediction self-corrects processes before defects can exist.</p>
                 </article>
                 <article class="card-minimal">
                     <div class="card-num">02</div>
                     <h3>Mobility</h3>
-                    <p>Lines that reconfigure themselves for each platform. Battery, drive unit, chassis — the factory re-designs its cells per variant, overnight.</p>
+                    <p>Cells that regenerate themselves per variant. Battery, drive unit, chassis — new joining modules, new wiring, new control — overnight, not over quarters.</p>
                 </article>
                 <article class="card-minimal">
                     <div class="card-num">03</div>
                     <h3>Energy</h3>
-                    <p>Grid and plant control synthesized as one system: autonomous decision loops that keep generation stable under any volatility.</p>
+                    <p>Cell control and grid control synthesized as one system: autonomous decision loops that keep generation stable under any volatility.</p>
                 </article>
             </div>
         </div>
@@ -383,9 +439,9 @@
     <section class="section cta-section">
         <div class="bg-glow cta-glow" aria-hidden="true"></div>
         <div class="container center-text reveal">
-            <span class="eyebrow">05 // EARLY ACCESS</span>
-            <h2 class="large-heading">Describe what<br>you want to build.</h2>
-            <p class="mb-2">We are selecting a small group of industrial partners for our next deployment cycle. The machines, the floor, the intelligence — generated together.</p>
+            <span class="eyebrow">06 // EARLY ACCESS</span>
+            <h2 class="large-heading">Describe one process.<br>Get the cell.</h2>
+            <p class="mb-2">We are selecting a small group of industrial partners for our next deployment cycle. The modules, the wiring, the control, the documentation — generated together.</p>
             <button class="btn-primary modal-trigger">Request Access</button>
         </div>
     </section>
@@ -399,8 +455,8 @@
             </div>
             <div class="footer-links">
                 <a href="#pipeline">Pipeline</a>
-                <a href="#shopfloor">Shopfloor</a>
-                <a href="#machines">Machinery</a>
+                <a href="#cells">Cells</a>
+                <a href="#modules">Modules</a>
                 <a href="#shift">The Shift</a>
             </div>
             <div class="copyright">© 2026 Plott AI Labs.</div>
@@ -469,14 +525,14 @@
         /* ---------- Terminal typing ---------- */
         const termEl = document.getElementById('terminal');
         const script = [
-            { text: '> generate shopfloor --product "ev-battery-module" --takt 22s', cls: 'cmd' },
-            { text: '  constraints: footprint 118m · class-A clean · ΔT < 14°C', cls: 'dim' },
-            { text: '  synthesizing layout … 3 candidate topologies', cls: 'dim' },
-            { text: '  growing machine MR-7X … 1,247 components  [00:41]', cls: 'dim' },
-            { text: '  simulating 10⁴ operating years … 0 critical faults', cls: 'dim' },
-            { text: '✓ GEN-0917 ready — control loop armed', cls: 'ok' },
-            { text: '> vary: add 400V pack variant, takt unchanged', cls: 'cmd' },
-            { text: '✓ regeneration #3,205 complete — floor adapted in 0.8 s', cls: 'ok' }
+            { text: '> generate cell --product "battery-cover joining" --takt 22s', cls: 'cmd' },
+            { text: '  constraints: 3 modules · profinet · IP54 · 380 V / 24 V', cls: 'dim' },
+            { text: '  synthesizing modules … pick · fit · fasten · inspect', cls: 'dim' },
+            { text: '  generating control … PLC + HMI code, field wiring', cls: 'dim' },
+            { text: '  emitting docs … schematics, wiring lists, BOM, manuals', cls: 'dim' },
+            { text: '✓ CELL-114 ready — 4,191 terminals verified, 0 undocumented', cls: 'ok' },
+            { text: '> adjust: fastening force 180 N -> 220 N — apply in field', cls: 'cmd' },
+            { text: '✓ re-validated live — module adapted, no downtime', cls: 'ok' }
         ];
         let lineIdx = 0, charIdx = 0, currentLine;
         function typeLoop() {

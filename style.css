@@ -411,6 +411,18 @@ h2 {
 .machine-svg .dims { opacity: 0; transition: opacity 1s ease 2.9s; }
 .machine-svg.drawn .dims { opacity: 1; }
 
+/* generated field wiring — copper flow */
+.machine-svg .wires { opacity: 0; transition: opacity 1s ease 1.2s; }
+.machine-svg.drawn .wires { opacity: 1; }
+.machine-svg .wires path {
+    stroke: rgba(245, 158, 11, 0.7);
+    stroke-width: 1.2;
+    fill: none;
+    stroke-dasharray: 6 4;
+    animation: wireFlow 1.1s linear infinite;
+}
+@keyframes wireFlow { to { stroke-dashoffset: -20; } }
+
 .machine-caption {
     display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
     padding: 1rem 0.8rem 0.4rem;
