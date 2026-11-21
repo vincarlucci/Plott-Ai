@@ -593,8 +593,9 @@ h2 {
     .topbar-tag { font-size: 0.58rem; }
     .hero-meta-row { flex-wrap: wrap; gap: 1.5rem; }
     .nav-links a { display: none; }
-    /* nav tabs hidden on mobile: drop the "/ GENERATIVE INDUSTRY" tag */
-    .logo-tag { display: none; }
+    .logo-sep { display: none; }
+    .modal-overlay { padding: 0.75rem; }
+    .modal { width: 100%; max-width: 100%; }
     .pipeline { grid-template-columns: 1fr; }
     .compare-grid { grid-template-columns: 1fr; }
     .stat-row { grid-template-columns: 1fr; }
